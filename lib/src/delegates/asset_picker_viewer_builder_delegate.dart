@@ -845,7 +845,8 @@ class DefaultAssetPickerViewerBuilderDelegate
             child: ScaleText(
               buildText(),
               style: TextStyle(
-                color: themeData.textTheme.bodyLarge?.color,
+                // color: themeData.textTheme.bodyLarge?.color,
+                color: Color(0xFF222222),
                 fontSize: 17,
                 fontWeight: FontWeight.normal,
               ),
@@ -963,10 +964,10 @@ class DefaultAssetPickerViewerBuilderDelegate
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
-                    if (isAppleOS(context))
-                      _appleOSSelectButton(context, isSelected, asset)
-                    else
-                      _androidSelectButton(context, isSelected, asset),
+                    // if (isAppleOS(context))
+                      _appleOSSelectButton(context, isSelected, asset),
+                    // else
+                    //   _androidSelectButton(context, isSelected, asset),
                     if (!isAppleOS(context))
                       ScaleText(
                         textDelegate.select,
