@@ -6,6 +6,7 @@ import 'dart:async';
 import 'dart:math' as math;
 import 'dart:ui' as ui;
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
@@ -1689,7 +1690,7 @@ class DefaultAssetPickerBuilderDelegate
                 : textDelegate.confirm,
             style: TextStyle(
               color: shouldAllowConfirm
-                  ? theme.textTheme.bodyLarge?.color
+                  ? const Color(0xFF222222)
                   : theme.textTheme.bodySmall?.color,
               fontSize: 17,
               fontWeight: FontWeight.normal,
@@ -2095,7 +2096,7 @@ class DefaultAssetPickerBuilderDelegate
                     if (isSelected)
                       AspectRatio(
                         aspectRatio: 1,
-                        child: Icon(Icons.check, color: themeColor, size: 26),
+                        child: Icon(Icons.check, color: Color(0xFF222222), size: 26),
                       ),
                   ],
                 ),
@@ -2202,7 +2203,7 @@ class DefaultAssetPickerBuilderDelegate
               duration: duration,
               reverseDuration: duration,
               child:
-                  selected ? const Icon(Icons.check) : const SizedBox.shrink(),
+                  selected ? const Icon(Icons.check, color: Color(0xFF222222)) : const SizedBox.shrink(),
             ),
           ),
         );

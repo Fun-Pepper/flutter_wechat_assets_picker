@@ -898,7 +898,7 @@ class DefaultAssetPickerViewerBuilderDelegate
             color: isSelected ? themeData.colorScheme.secondary : null,
             shape: BoxShape.circle,
           ),
-          child: const Center(child: Icon(Icons.check, size: 20.0)),
+          child: const Center(child: Icon(Icons.check, size: 20.0, color: Color(0xFF222222),)),
         ),
       ),
     );
