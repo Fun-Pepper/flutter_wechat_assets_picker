@@ -677,6 +677,7 @@ abstract class AssetPickerBuilderDelegate<Asset, Path> {
       height: appBarItemHeight * 1.25,
       padding: const EdgeInsets.symmetric(horizontal: 24),
       color: themeColor,
+      textColor: pickerTheme?.textTheme.bodyLarge?.color,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(5),
       ),
